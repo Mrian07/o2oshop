@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lll"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/switch_but"
+            android:checked="true"
+            android:theme="@style/SCBSwitch" />
+
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:text="Active"
+            android:textColor="@color/black"
+
+            android:layout_marginLeft="@dimen/space_5"
+            android:id="@+id/status"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space_8"
+        android:layout_below="@+id/lll"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_myorder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</RelativeLayout>

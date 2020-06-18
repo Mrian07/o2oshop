@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/space_5"
+    android:background="@drawable/background"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_below="@+id/call"
+        android:id="@+id/re"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="1dp"
+                android:weightSum="2"
+                android:gravity="left|center">
+
+            <com.godeliver.user.Fonts.LatoBLack
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="Order ID:"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+
+
+            <com.godeliver.user.Fonts.LatoBLack
+                android:id="@+id/tv_order_no"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_small"
+                android:textStyle="bold" />
+            </LinearLayout> <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="1dp"
+            android:gravity="end">
+            <com.godeliver.user.Fonts.LatoBLack
+                android:id="@+id/tv_order_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:paddingBottom="@dimen/space_5"
+                android:textColor="@color/green"
+                android:textSize="@dimen/text_size_normal" /></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_2"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="1dp"
+                android:weightSum="2"
+                android:gravity="left|center">
+            <com.godeliver.user.Fonts.LatoBLack
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="Placed On:"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.godeliver.user.Fonts.LatoBLack
+                android:id="@+id/tv_order_date"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:gravity="left|top">
+            <com.godeliver.user.Fonts.LatoBLack
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Time:"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.godeliver.user.Fonts.LatoBLack
+                android:id="@+id/tv_order_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time"
+                android:layout_gravity="top|left"
+                android:gravity="left|center"
+                android:textSize="13sp"
+                android:textColor="#000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_2"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="1dp"
+                android:weightSum="2"
+                android:gravity="left|top">
+
+            <com.godeliver.user.Fonts.LatoBLack
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="Receiver Name:"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.godeliver.user.Fonts.LatoBLack
+                android:id="@+id/tv_recivername"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:gravity="top|left"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:gravity="left|center">
+            <com.godeliver.user.Fonts.LatoBLack
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:gravity="left|top"
+                android:layout_gravity="top|left"
+                android:text="T.Items:"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.godeliver.user.Fonts.LatoBLack
+                android:id="@+id/tv_order_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="13sp"
+                android:gravity="top|left"
+                android:layout_gravity="top|left"
+                android:textColor="#000" />
+        </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="#DCDCDC"
+            android:layout_margin="@dimen/space_5"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_2"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="1dp"
+                android:weightSum="2"
+                android:gravity="left|top">
+
+                <com.godeliver.user.Fonts.LatoBLack
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="House No.:"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size_small" />
+
+                <com.godeliver.user.Fonts.LatoBLack
+                    android:id="@+id/tv_house"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:gravity="left|top"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#000" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:gravity="left|center">
+                <com.godeliver.user.Fonts.LatoBLack
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="Society Name:"
+                    android:visibility="gone"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="@dimen/text_size_small" />
+
+                <com.godeliver.user.Fonts.LatoBLack
+                    android:id="@+id/tv_societyname"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/space_2"
+            android:layout_height="wrap_content">
+
+            <com.godeliver.user.Fonts.LatoBLack
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:text="Store Name:"
+                android:textSize="@dimen/text_size_small" />
+
+
+            <com.godeliver.user.Fonts.LatoBLack
+                android:id="@+id/store_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text=""
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="#808080"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_10">
+
+
+        <com.godeliver.user.Fonts.LatoBLack
+            android:id="@+id/tv_order_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:text="Price"
+            android:textColor="#000"
+            android:textSize="@dimen/text_size_large" />
+
+        <com.godeliver.user.Fonts.LatoBLack
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".8"
+            android:text=""
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_large" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_14"
+        android:orientation="horizontal">
+
+        <com.godeliver.user.Fonts.LatoBLack
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tracking Status On:"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/text_size_small" />
+
+        <com.godeliver.user.Fonts.LatoBLack
+            android:id="@+id/tracking_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_8"
+            android:text="Date"
+            android:textColor="#000"
+            android:textSize="@dimen/text_size_small" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_rounded_button"
+            android:padding="2dp">
+
+            <com.godeliver.user.Fonts.LatoBLack
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Delivered"
+                android:maxLines="1"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_small" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="Get Direction"
+            android:id="@+id/get_dirc"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_rounded_button"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
